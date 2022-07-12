@@ -83,7 +83,7 @@ if dd != nil{
     dd!.simpleDescription()
     dd!.bark()
 }
-//as?는 불확실한 경우 as는 컴파일러도 프로그래머도 아는것. as!는 컴파일러는 모르지만 프로그래머가 아는것
+//as?는 불확실한 경우 as는 컴파일러도 프로그래머도 아는것. as!는 컴파일러는 모르지만 프로그래머가 확실히 아는것
 let mm = m as? Dog
 let nd = mm?.simpleDescription()
 

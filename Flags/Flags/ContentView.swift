@@ -47,3 +47,8 @@ struct CountryView: View {
         }
     }
 }
+struct CountryView_Previews: PreviewProvider {
+    static var previews: some View {
+        CountryView(country: Nations.contintents[0].countries[0])
+    }
+}
