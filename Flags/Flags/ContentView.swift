@@ -7,18 +7,54 @@
 
 import SwiftUI
 
+extension UIColor {
+
+    func lighter(by percentage: CGFloat = 30.0) -> UIColor? {
+        return self.adjust(by: abs(percentage) )
+    }
+
+    func darker(by percentage: CGFloat = 30.0) -> UIColor? {
+        return self.adjust(by: -1 * abs(percentage) )
+    }
+
+    func adjust(by percentage: CGFloat = 30.0) -> UIColor? {
+        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+        if self.getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
+            return UIColor(red: min(red + percentage/100, 1.0),
+                           green: min(green + percentage/100, 1.0),
+                           blue: min(blue + percentage/100, 1.0),
+                           alpha: alpha)
+        } else {
+            return nil
+        }
+    }
+}
+
 struct ContentView: View {
     var body: some View {
-        List{
-            ForEach(Nations.contintents, id:\.region){ continent in
-                Section(header:Text(continent.region)){
-                    ForEach(continent.countries, id: \.name){c in
-                        CountryView(country: c)
+         NavigationView{
+            List{
+                ForEach(Nations.contintents, id:\.region){ continent in
+                    Section(header:Text(continent.region)){
+                        ForEach(continent.countries, id: \.name){c in
+                            NavigationLink(destination: {//누른 후 나오는 것
+                                CountryDetailView(country: c)
+                            }) {
+                                CountryView(country: c)//누르기 전에 나오는것
+                            }
+                        }
                     }
                 }
+                
             }
-            
-        }.listStyle(SidebarListStyle())
+            .listStyle(SidebarListStyle())
+            .navigationBarTitle("Countries")
+         }
+         .onAppear {
+             let color = UIColor.blue.lighter(by:50)
+             UINavigationBar.appearance().barTintColor = color
+             
+         }
     }
 }
 
