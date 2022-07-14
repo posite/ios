@@ -14,12 +14,16 @@ struct GameView: View {
     @State var showsRestartAlert = false
     var body: some View {
         VStack {
+            Spacer()
             HStack{
                 Text("MemoryGame")
+                    .font(.largeTitle)
                 Spacer()
                 Text("Flips: \(game.flips)")
+                    .font(.title)
             }
             .padding(.horizontal)
+            Spacer()
             GridStack(rows: GameModel.rows, columns: GameModel.cols) { row, column in
                 CardView(card: game.card(row: row, col: column), prefix: prefix)
                     .gesture(TapGesture().onEnded{
@@ -30,6 +34,7 @@ struct GameView: View {
                     }
                 )
             }.aspectRatio(CGSize(width: GameModel.cols, height: GameModel.rows), contentMode: .fit)
+            Spacer()
             HStack{
                 Spacer()
                 Button {
@@ -57,6 +62,7 @@ struct GameView: View {
                 }
                 Spacer()
             }
+            Spacer()
         }
         .background(
             LinearGradient(colors: [.yellow,.white], startPoint: .topLeading, endPoint: .bottomTrailing)
