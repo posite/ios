@@ -58,9 +58,9 @@
 				A3684AE2287D5C4700BE90FC /* FlagsApp.swift */,
 				A3684AF2287D5D9300BE90FC /* Nations.swift */,
 				A3684AE4287D5C4700BE90FC /* ContentView.swift */,
+				A391F773287E6BBE00FED7C5 /* CountryDetailView.swift */,
 				A3684AE6287D5C4800BE90FC /* Assets.xcassets */,
 				A3684AE8287D5C4800BE90FC /* Preview Content */,
-				A391F773287E6BBE00FED7C5 /* CountryDetailView.swift */,
 			);
 			path = Flags;
 			sourceTree = "<group>";
