@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct MenuView: View {
+    let prefixes = ["f", "t","z"]
     var body: some View {
         NavigationView{
-            List{
-                NavigationLink(destination: GameView(prefix: "f")) {
-                    Text("Game with prefix f")
-                }
-                NavigationLink(destination: GameView(prefix: "t")) {
-                    Text("Game with prefix t")
+            VStack{
+                ScrollView(.vertical, showsIndicators: false) {
+                    ForEach(prefixes, id:\.self){prefix in
+                        MenuItemView(prefix: prefix)
+                    }
                 }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(LinearGradient(colors: [.orange.opacity(0.5),.white], startPoint: .topLeading, endPoint: .bottomTrailing))
             .navigationTitle(Text("Memory Game"))
         }
     }
@@ -26,5 +28,39 @@ struct MenuView: View {
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
         MenuView()
+    }
+}
+
+struct MenuItemView: View {
+    let prefix : String
+    var body: some View {
+        HStack{
+            Image("\(prefix)_back")
+                .resizable()
+                .frame(width: UIScreen.main.bounds.width * 0.4,
+                       height: UIScreen.main.bounds.width * 0.4)
+            Spacer()
+            NavigationLink(destination: GameView(prefix: prefix)) {
+                Text("Play Game")
+                    .padding()
+                    .background(
+                        Capsule()
+                            .stroke(lineWidth: 4)
+                    )
+            }
+            Spacer()
+        }
+        .frame(height: 300)
+        .background(
+            ZStack{
+                Color.white
+                    .cornerRadius(25)
+                    .padding(20)
+                Image("\(prefix)_bg")
+                    .resizable()
+                    .padding(30)
+            }.rotation3DEffect(.degrees(30), axis: (x: 0,y: -1, z: 0))
+        )
+        
     }
 }

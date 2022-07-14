@@ -10,7 +10,7 @@ import SwiftUI
 struct CardView: View {
     var card : Card
     var prefix : String
-    var timer = Timer.publish(every: 0.1 ,on: .main,in: .common).autoconnect()
+    var timer = Timer.publish(every: 0.05 ,on: .main,in: .common).autoconnect()
     @State var frameIndex = 1
     var body: some View {
         if card.state == .removed{
@@ -25,10 +25,10 @@ struct CardView: View {
                 .onReceive(timer) { _ in
 //                    NSLog("on timer receive")
                     frameIndex += 1
-                    if frameIndex > 8 {
+                    let img = UIImage(named:  imageName)
+                    if img == nil {
                         frameIndex = 1
                     }
-                    
                 }
         }
         
