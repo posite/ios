@@ -43,6 +43,7 @@ struct AlbumItemView: View {
             VStack(alignment: .leading){
                 Text("\(album.albumTitle)")
                     .font(.title2)
+                Spacer()
                 Text("\(album.artistName)")
                     .font(.footnote)
                     .foregroundColor(.purple)
