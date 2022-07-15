@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationView{
             List{
                 ForEach(albumStore.albums, id:\.albumTitle){album in
-                    NavigationLink(destination: Text("\(album.albumTitle)")) {
+                    NavigationLink(destination: AlbumDetailVIew(album: album)) {
                         AlbumItemView(album: album)
                     }
                 }
@@ -31,11 +31,12 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct AlbumItemView: View {
-    static let imageSize = 50
+    static let imageSize = 60
     let album : Album
+    @State var image : Image?
     var body: some View {
         HStack{
-            Image(systemName: "music.note")
+            loadAlbumImage()
                 .resizable()
                 .frame(width: CGFloat(AlbumItemView.imageSize),
                        height: CGFloat(AlbumItemView.imageSize))
@@ -46,6 +47,14 @@ struct AlbumItemView: View {
                     .font(.footnote)
                     .foregroundColor(.purple)
             }
+        }
+    }
+    func loadAlbumImage() -> Image{
+        if image != nil {
+            return image!
+        }
+        return ImageStore.load(strUrl: album.image) { image in
+            self.image = image
         }
     }
 }

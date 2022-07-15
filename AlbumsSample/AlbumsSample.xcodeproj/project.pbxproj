@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A3308D332880FC0F004C7045 /* res in Resources */ = {isa = PBXBuildFile; fileRef = A3308D322880FC0F004C7045 /* res */; };
+		A3308D3528810378004C7045 /* AlbumDetailVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308D3428810378004C7045 /* AlbumDetailVIew.swift */; };
+		A3308D37288107D8004C7045 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308D36288107D8004C7045 /* ImageStore.swift */; };
 		A3BD2EF028800051003E9A6F /* AlbumsSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD2EEF28800051003E9A6F /* AlbumsSampleApp.swift */; };
 		A3BD2EF228800051003E9A6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD2EF128800051003E9A6F /* ContentView.swift */; };
 		A3BD2EF428800052003E9A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3BD2EF328800052003E9A6F /* Assets.xcassets */; };
@@ -17,6 +19,9 @@
 
 /* Begin PBXFileReference section */
 		A3308D322880FC0F004C7045 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../res; sourceTree = "<group>"; };
+		A3308D3428810378004C7045 /* AlbumDetailVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailVIew.swift; sourceTree = "<group>"; };
+		A3308D36288107D8004C7045 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		A3308D382881124B004C7045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A3BD2EEC28800051003E9A6F /* AlbumsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BD2EEF28800051003E9A6F /* AlbumsSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsSampleApp.swift; sourceTree = "<group>"; };
 		A3BD2EF128800051003E9A6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,9 +60,12 @@
 		A3BD2EEE28800051003E9A6F /* AlbumsSample */ = {
 			isa = PBXGroup;
 			children = (
+				A3308D382881124B004C7045 /* Info.plist */,
 				A3BD2EEF28800051003E9A6F /* AlbumsSampleApp.swift */,
 				A3BD2EF128800051003E9A6F /* ContentView.swift */,
 				A3BD2EFD288000C5003E9A6F /* AlbumStore.swift */,
+				A3308D3428810378004C7045 /* AlbumDetailVIew.swift */,
+				A3308D36288107D8004C7045 /* ImageStore.swift */,
 				A3308D322880FC0F004C7045 /* res */,
 				A3BD2EF328800052003E9A6F /* Assets.xcassets */,
 				A3BD2EF528800052003E9A6F /* Preview Content */,
@@ -147,6 +155,8 @@
 				A3BD2EF228800051003E9A6F /* ContentView.swift in Sources */,
 				A3BD2EF028800051003E9A6F /* AlbumsSampleApp.swift in Sources */,
 				A3BD2EFE288000C5003E9A6F /* AlbumStore.swift in Sources */,
+				A3308D37288107D8004C7045 /* ImageStore.swift in Sources */,
+				A3308D3528810378004C7045 /* AlbumDetailVIew.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +289,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AlbumsSample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlbumsSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +318,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AlbumsSample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlbumsSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
