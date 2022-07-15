@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3308D332880FC0F004C7045 /* res in Resources */ = {isa = PBXBuildFile; fileRef = A3308D322880FC0F004C7045 /* res */; };
 		A3BD2EF028800051003E9A6F /* AlbumsSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD2EEF28800051003E9A6F /* AlbumsSampleApp.swift */; };
 		A3BD2EF228800051003E9A6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD2EF128800051003E9A6F /* ContentView.swift */; };
 		A3BD2EF428800052003E9A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3BD2EF328800052003E9A6F /* Assets.xcassets */; };
 		A3BD2EF728800052003E9A6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3BD2EF628800052003E9A6F /* Preview Assets.xcassets */; };
 		A3BD2EFE288000C5003E9A6F /* AlbumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD2EFD288000C5003E9A6F /* AlbumStore.swift */; };
-		A3BD2F04288001C4003E9A6F /* res in Resources */ = {isa = PBXBuildFile; fileRef = A3BD2F03288001C4003E9A6F /* res */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3308D322880FC0F004C7045 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../res; sourceTree = "<group>"; };
 		A3BD2EEC28800051003E9A6F /* AlbumsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BD2EEF28800051003E9A6F /* AlbumsSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsSampleApp.swift; sourceTree = "<group>"; };
 		A3BD2EF128800051003E9A6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A3BD2EF328800052003E9A6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3BD2EF628800052003E9A6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3BD2EFD288000C5003E9A6F /* AlbumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumStore.swift; sourceTree = "<group>"; };
-		A3BD2F03288001C4003E9A6F /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../res; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 				A3BD2EEF28800051003E9A6F /* AlbumsSampleApp.swift */,
 				A3BD2EF128800051003E9A6F /* ContentView.swift */,
 				A3BD2EFD288000C5003E9A6F /* AlbumStore.swift */,
+				A3308D322880FC0F004C7045 /* res */,
 				A3BD2EF328800052003E9A6F /* Assets.xcassets */,
-				A3BD2F03288001C4003E9A6F /* res */,
 				A3BD2EF528800052003E9A6F /* Preview Content */,
 			);
 			path = AlbumsSample;
@@ -131,7 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3BD2F04288001C4003E9A6F /* res in Resources */,
+				A3308D332880FC0F004C7045 /* res in Resources */,
 				A3BD2EF728800052003E9A6F /* Preview Assets.xcassets in Resources */,
 				A3BD2EF428800052003E9A6F /* Assets.xcassets in Resources */,
 			);
