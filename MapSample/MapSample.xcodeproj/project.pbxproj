@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		A3308D4628811AC9004C7045 /* MapSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308D4528811AC9004C7045 /* MapSampleApp.swift */; };
-		A3308D4828811AC9004C7045 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308D4728811AC9004C7045 /* ContentView.swift */; };
+		A3308D4828811AC9004C7045 /* PoiLIstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308D4728811AC9004C7045 /* PoiLIstView.swift */; };
 		A3308D4A28811ACB004C7045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3308D4928811ACB004C7045 /* Assets.xcassets */; };
 		A3308D4D28811ACB004C7045 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3308D4C28811ACB004C7045 /* Preview Assets.xcassets */; };
+		A3308D5428812D20004C7045 /* PoiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308D5328812D20004C7045 /* PoiData.swift */; };
+		A3308D56288142DC004C7045 /* PoiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308D55288142DC004C7045 /* PoiDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3308D4228811AC9004C7045 /* MapSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3308D4528811AC9004C7045 /* MapSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSampleApp.swift; sourceTree = "<group>"; };
-		A3308D4728811AC9004C7045 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3308D4728811AC9004C7045 /* PoiLIstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiLIstView.swift; sourceTree = "<group>"; };
 		A3308D4928811ACB004C7045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3308D4C28811ACB004C7045 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3308D5328812D20004C7045 /* PoiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiData.swift; sourceTree = "<group>"; };
+		A3308D55288142DC004C7045 /* PoiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				A3308D4528811AC9004C7045 /* MapSampleApp.swift */,
-				A3308D4728811AC9004C7045 /* ContentView.swift */,
+				A3308D4728811AC9004C7045 /* PoiLIstView.swift */,
+				A3308D5328812D20004C7045 /* PoiData.swift */,
+				A3308D55288142DC004C7045 /* PoiDetailView.swift */,
 				A3308D4928811ACB004C7045 /* Assets.xcassets */,
 				A3308D4B28811ACB004C7045 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3308D4828811AC9004C7045 /* ContentView.swift in Sources */,
+				A3308D56288142DC004C7045 /* PoiDetailView.swift in Sources */,
+				A3308D5428812D20004C7045 /* PoiData.swift in Sources */,
+				A3308D4828811AC9004C7045 /* PoiLIstView.swift in Sources */,
 				A3308D4628811AC9004C7045 /* MapSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
